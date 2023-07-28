@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+
+
+    #background-animation canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cookie Page</h1>
+  </header>
+
+  <div id="background-animation"></div>
+
+
+     <style>
+    body {
+      background-color: #6b6b6b;
+    }
+   .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 70px;
+      height: 70px;
+  </style>
+  </main>
+<main>
+  <img class="logo" src="cook1e.png" alt="Logo">
+  <h2>个人简介</h2>
+  <p>你好!我是Cookie也是CC,一位热爱编程和设计的人.我喜欢创造美丽的网页和应用程序,同时也对前端开发和用户体验设计很感兴趣,在这个个人主页上，你可以了解更多关于我的信息和作品</p>
+
+  <h2>我的技能</h2>
+  <ul>
+    <li>Python</li>
+    <li>Photoshop</li>
+    <li>C++</li>
+  </ul>
+
+  <h2>关于我</h2>
+  <p>我出生于2011-05-04,一名江西人</p>
+  <p>QQ:639476426 VX:ankey0504</p>
+<h2>其他</h2>
+<p>凡是用电脑打开这个网页的点击会有粒子效果</p>
+<p>加入我们请联系我QQ,爱来自山竹studio</p>
+
+</main>
+
+
+  <script src="lz.js"></script>
+  <script>
+    // 使用particles.js库实现点击产生火花动画效果
+    particlesJS("background-animation", {
+      particles: {
+        number: {
+          value: 0
+        },
+        color: {
+          value: "#ff0000"
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 1,
+          random: false,
+          anim: {
+            enable: false
+          }
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: false
+          }
+        },
+        move: {
+          enable: true,
+          speed: 10,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "destroy"
+        }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: {
+          onclick: {
+            enable: true,
+            mode: "push"
+          }
+        },
+        modes: {
+          push: {
+            particles_nb: 10
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
